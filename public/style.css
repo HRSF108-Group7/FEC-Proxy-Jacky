@@ -1,0 +1,30 @@
+#container{
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+img{
+  width: 100%;
+}
+
+#Bag{
+  flex-basis:25%;
+}
+
+#bagPic{
+  position: fixed;
+  width:25%;
+  right: 0;
+  top:8%;
+}
+
+#services{
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+#Nav{
+  position:fixed;
+  z-index: 1;
+  top:0;
+}

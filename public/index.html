@@ -3,37 +3,50 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,900" rel="stylesheet">
     <title>FEC Demo</title>
   </head>
   <body>
-    <div id="Profile">Profile</div>
-    <div id="Menu">Menu</div>
-    <div id="Suggestions">Suggestions</div>
-    <div id="Reviews">Reviews</div>
+
+    <div id="Nav"><img src="/nav.png" alt="" id="navPic"></div>
+    <div id="container"> 
+      <div id="Bag">
+        <img id="bagPic" src="/bag.png" alt="">
+      </div>
+      <div id="services">
+        <div id="Profile"><img src="/profile.png" alt=""></div>
+        <div id="Menu"></div>
+        <div id="Suggestions"></div>
+        <div id="Reviews"></div>
+      </div>
+    </div>
+    
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3004/app.js"></script>
+    <!-- <script src="https://s3.us-east-2.amazonaws.com/fec-profile/bundle.js"></script> -->
+    <script src="https://s3-us-west-1.amazonaws.com/fec-menu/bundle.js"></script>
+    <!-- <script src="https://s3.us-east-2.amazonaws.com/grubhubbundle/bundle.js"></script> -->
+    <script src="http://localhost:3004/bundle.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
-      ReactDOM.render(
-        React.createElement(Profile),
-        document.getElementById('Profile')
-      );
-      ReactDOM.render(
-        React.createElement(Menu),
-        document.getElementById('Menu')
-      );
-      ReactDOM.render(
-        React.createElement(Suggestions),
-        document.getElementById('Suggestions')
-      );
-      ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('Reviews')
-      );
+      // ReactDOM.render(
+      //   React.createElement(Profile),
+      //   document.getElementById('Profile')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(Menu),
+      //   document.getElementById('Menu')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(index),
+      //   document.getElementById('main')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(Reviews),
+      //   document.getElementById('Reviews')
+      // );
     </script>
   </body>
 </html>
