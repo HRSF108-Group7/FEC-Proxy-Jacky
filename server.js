@@ -58,7 +58,7 @@ app.get('/restaurants/:id/reviews', (req, res)=> {
   axios.get(`http://localhost:3004/restaurants/${req.params.id}/reviews`)
     .then((response) => {
       console.log(response);
-      res.status(200).send(response.data);
+      res.status(200).json(response.data);
     })
     .catch((error) => {
       console.log(error);
