@@ -13,7 +13,7 @@ app.get('/restaurants/:id', (req, res) => {
 });
 
 app.get('/restaurants/:id/profile', (req, res)=> {
-  axios.get(`http://localhost:3001/restaurants/${req.params.id}/profile`)
+  axios.get(`http://ec2-18-225-9-230.us-east-2.compute.amazonaws.com/restaurants/${req.params.id}/profile`)
     .then((response) => {
 
       res.status(202).json(response.data);
@@ -24,7 +24,7 @@ app.get('/restaurants/:id/profile', (req, res)=> {
 })
 
 app.get('/restaurants/:id/menu-items', (req, res)=> {
-  axios.get(`http://localhost:3002/restaurants/${req.params.id}/menu-items`)
+  axios.get(`http://ec2-13-57-210-63.us-west-1.compute.amazonaws.com/restaurants/${req.params.id}/menu-items`)
     .then((response) => {
       res.status(202).json(response.data);
     })
@@ -34,7 +34,7 @@ app.get('/restaurants/:id/menu-items', (req, res)=> {
 })
 
 app.get('/restaurants/:id/menu-items/:itemId', (req, res)=> {
-  axios.get(`http://localhost:3002/restaurants/${req.params.id}/menu-items/${req.params.itemId}`)
+  axios.get(`http://ec2-13-57-210-63.us-west-1.compute.amazonaws.com/${req.params.id}/menu-items/${req.params.itemId}`)
     .then((response) => {
       res.status(202).json(response.data);
     })
@@ -45,7 +45,7 @@ app.get('/restaurants/:id/menu-items/:itemId', (req, res)=> {
 
 
 app.get('/restaurants/:id/suggestions', (req, res)=> {
-  axios.get(`http://localhost:3003/restaurants/${req.params.id}/suggestions`)
+  axios.get(`http://ec2-54-183-207-43.us-west-1.compute.amazonaws.com/restaurants/${req.params.id}/suggestions`)
     .then((response) => {
       res.status(202).json(response.data);
     })
@@ -55,7 +55,7 @@ app.get('/restaurants/:id/suggestions', (req, res)=> {
 })
 
 app.get('/restaurants/:id/reviews', (req, res)=> {
-  axios.get(`http://localhost:3004/restaurants/${req.params.id}/reviews`)
+  axios.get(`http://ec2-54-183-220-92.us-west-1.compute.amazonaws.com/restaurants/${req.params.id}/reviews`)
     .then((response) => {
       console.log(response);
       res.status(200).json(response.data);
